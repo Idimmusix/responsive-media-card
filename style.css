@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+main {
+  width: 50%;
+  margin: auto;
+  /*margin-top:*/
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10em;
+  height: 100%;
+  background-color: pink;
+}
+.text {
+  color: black;
+  padding-left: 2em;
+}
+.text h1 {
+  font-size: 30px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.text p {
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+.form-div {
+  display: flex;
+  flex-direction: column;
+}
+.form-div .top-button {
+  background-color: blue;
+  color: white;
+  font-size: 12px;
+  margin: 0.5em;
+}
+.form-div .main-form {
+  background-color: white;
+  margin: 0.5em;
+}
+.form-div .col {
+  /*padding: 0.5em;*/
+  margin: 0.5em;
+}
+.form-div .down-button {
+  align-items: stretch;
+  margin: 0.5em;
+  background-color: green;
+}
+.text-under-button {
+  margin: 0.5em;
+  font-size: 10px;
+}
+.text-under-button a {
+  color: red;
+}
