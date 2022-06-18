@@ -8,16 +8,19 @@ body {
   background-color: black;
 }
 main {
-  width: 50%;
-  margin: auto;
+  /*width: 50%;
+  margin: auto;*/
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  Height: 100vh;
   /*margin-top:*/
 }
 .card {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  
   padding: 10em;
-  height: 100%;
+  
   background-color: pink;
 }
 .text {
