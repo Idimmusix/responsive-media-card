@@ -44,7 +44,7 @@ main {
 }
 
 .text {
-  color: black;
+  color: whitesmoke;
   padding-left: 0.5em;
   width: 100%;
   font-family: Poppins;
@@ -61,14 +61,24 @@ main {
 .form-div {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width:100%;
+  align-items: center;
+  padding: 1em;
+
+  margin:auto;
   font-family: Poppins;
 }
 .form-div .top-button {
+  align-items: center;
+  justify-content: center;
   background-color: hsl(248, 32%, 49%);
   color: white;
   font-size: 12px;
-  margin: 0.5em;
+  margin-bottom: 1em;
+  border: none; 
+  outline: none;
+  padding:0.5rem;
+  width: 100%;
 }
 .form-div .main-form {
   background-color: white;
@@ -85,9 +95,22 @@ main {
   padding: 0.5em;
 }
 .form-div .down-button {
-  align-items: stretch;
-  margin: 0.5em;
+  display: block;
+  width: 100%;
   background-color: hsl(154, 59%, 51%);
+  border: none; outline: none;
+
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 10px;
+  margin-bottom: 1em;
+  border: none; 
+  outline: none;
+  padding: 5px;
+}
+.form-div .down-button:hover{
+  background-color: hsl(152, 59%, 70%);
 }
 .text-under-button {
   margin: 0.5em;
