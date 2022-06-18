@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Poppins;
 }
 
 body {
@@ -17,19 +18,36 @@ main {
   /*margin-top:*/
 }
 .card {
-  background-image: url("./images/bg-intro-desktop.png");
+  background-image: url("./images/bg-intro-mobile.png");
   /*background-repeat: no-repeat;*/
   background-position: center;
   display: flex;
+  flex-direction: column;
   width:100%;
-  padding: 5em;
   align-items: center;
+  padding: 1em;
   background-color: hsl(0, 100%, 74%);
+}
+@media screen and (min-width: 870px) {
+  .card{
+    background-image: url("./images/bg-intro-desktop.png");
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    padding: 2.5em;
+    align-items: center;
+    background-color: hsl(0, 100%, 74%);
+  }
+  .text{
+    padding-left: 2em; 
+  }
 }
 
 .text {
   color: black;
-  padding-left: 2em;
+  padding-left: 0.5em;
+  width: 100%;
+  font-family: Poppins;
 }
 .text h1 {
   font-size: 30px;
@@ -43,6 +61,8 @@ main {
 .form-div {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  font-family: Poppins;
 }
 .form-div .top-button {
   background-color: hsl(248, 32%, 49%);
@@ -52,11 +72,17 @@ main {
 }
 .form-div .main-form {
   background-color: white;
-  margin: 0.5em;
+  /*margin: 0.5em;*/
+  width:100%;
 }
 .form-div .col {
   /*padding: 0.5em;*/
   margin: 0.5em;
+  /*width: 100%;*/
+}
+.form-div .form-control{
+  width:100%;
+  padding: 0.5em;
 }
 .form-div .down-button {
   align-items: stretch;
