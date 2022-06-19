@@ -5,10 +5,12 @@
     <title>Responsiveness and Media Queries By Idimmusix For Zuriboard</title>
     <link rel="preconnect" href="https://fonts.google.com/specimen/Poppins"/>
     <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="script.js"></script>
   </head>
   <body>
     <main>
-      <div class="card">
+      <div class="my-card">
         <div class="text">
           <h1>Learn to code by<br />watching others</h1>
           <p>
@@ -17,39 +19,43 @@
             developers think is invaluable
           </p>
         </div>
-        <div class="form-div">
+        <div class="form-div" id="contact_form">
           <button class="top-button">
             Try it free 7 days then $20/mo. thereafter
           </button>
           <div class="main-form">
-            <form action="post">
-              <div class="col form-group">
-                <input
-                  type="text"
+            <form action="post" class="needs-validation" novalidate>
+              <div class="form-group">
+                  <input type="text" 
                   name="first-name"
-                  class="form-control"
-                  id="first-name"
-                  placeholder="First Name"
-                  required
-                />
+                  class="form-control" 
+                  placeholder="First Name" 
+                  required>
+                  <div class="invalid-feedback">
+                    First name cannot be empty.
+                  </div>
               </div>
-              <div class="col form-group">
-                <input
-                  type="text"
-                  name="last-name"
-                  class="form-control"
-                  placeholder="Last Name"
-                  required
-                />
-              </div>
-              <div class="col form-group">
+              
+              <div class="form-group">
+                <input type="text" 
+                name="last-name"
+                class="form-control" 
+                  placeholder="Last Name" 
+                required>
+                <div class="invalid-feedback">
+                  Last name cannot be empty.
+                </div>
+            </div>
+              <div class="form-group">
                 <input
                   type="email"
                   name="email"
                   class="form-control"
                   placeholder="email"
-                  required
-                />
+                  required/>
+                  <div class="invalid-feedback">
+                  Looks like this is not an email.
+                </div>
               </div>
               <div class="col form-group">
                 <input
@@ -57,12 +63,14 @@
                   name="password"
                   class="form-control"
                   placeholder="Password"
-                  required
-                />
+                  required/>
+                  <div class="invalid-feedback">
+                  Password cannot be empty.
+                </div>
               </div>
               <div class="col form-group form-button">
                 <div>
-                  <button class="down-button">CLAIM YOUR FREE TRIAL</button>
+                  <button type="submit" class="down-button">CLAIM YOUR FREE TRIAL</button>
                 </div>
               </div>
               <div class="text-under-button">
@@ -76,5 +84,6 @@
         </div>
       </div>
     </main>
+    
   </body>
 </html>
