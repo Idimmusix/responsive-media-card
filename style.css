@@ -51,6 +51,7 @@ main {
   color: whitesmoke;
   padding-left: 0.5em;
   width: 100%;
+  align-items:center;
 
 }
 .text h1 {
@@ -58,6 +59,7 @@ main {
   padding-bottom: 10px;
   font-weight: 800;
   margin-left: 15%;
+  align-items:center;
 }
 .text p {
   font-size: 13px;
