@@ -8,6 +8,7 @@
 body {
   background-color: black;
   font-family: Poppins, sans-serif, Verdana, Geneva, Tahoma;
+  font-size: 16px;
 }
 main {
   width: 50%;
@@ -54,10 +55,10 @@ main {
 .text h1 {
   font-size: 30px;
   padding-bottom: 10px;
-  font-weight: bold;
+  font-weight: 800;
 }
 .text p {
-  font-size: 12px;
+  font-size: 16px;
   padding-bottom: 10px;
 }
 .form-div {
@@ -105,7 +106,8 @@ main {
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 10px;
+  
+  font-weight: 600;
   margin-bottom: 1em;
   border: none; 
   outline: none;
@@ -116,7 +118,8 @@ main {
 }
 .text-under-button {
   margin: 0.5em;
-  font-size: 10px;
+  
+  font-weight: 400;
 }
 .text-under-button a {
   color: red;
@@ -168,6 +171,10 @@ main {
   flex: 1 1 auto;
   width: 1%;
   min-width: 0;
+}
+button{
+  box-shadow: #212529;
+  border-radius: 5px;
 }
 
 
